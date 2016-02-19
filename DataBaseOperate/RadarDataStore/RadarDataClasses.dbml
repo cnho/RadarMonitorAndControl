@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RadarStatusPowerData" Class="RadarDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=127.0.0.1;Initial Catalog=RadarStatusPowerData;User ID=sa" SettingsObjectName="DataBaseOperate.Properties.Settings" SettingsPropertyName="RadarStatusPowerDataConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AlarmStatusTable" Member="AlarmStatusTable">
+    <Type Name="AlarmStatusTable">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StationID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PowerGridUnderVolOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PowerGridUnderVolQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LowPowerFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LowPowerFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FilaVolFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FilaVolFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TitPumpFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TitPumpFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilVolFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilVolFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransmitOverVolOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransmitOverVolQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransmitOverCurOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransmitOverCurQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilCurFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilCurFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilAirFlowFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FocusCoilAirFlowFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TriggerFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TriggerFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChargingFeedbackFlowRectifierUnderVolOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChargingFeedbackFlowRectifierUnderVolQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChargingFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChargingFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorOverOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorOverQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorNegPeakOverOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorNegPeakOverQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorSwitchFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorSwitchFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronOverCurOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronOverCurQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronFilaFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronFilaFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronTitPumpFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronTitPumpFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronAirTempAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronAirTempAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronAirFlowAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KlystronAirFlowAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WaveGuidPressAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WaveGuidPressAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WaveGuidArcAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WaveGuidArcAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TankLevelAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TankLevelAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TankTempAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TankTempAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AntennaWaveGuidChain" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AntennaCirculatorOverHeat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackDoorChainOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackDoorChainQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackAirTempAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackAirTempAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackAirFlowAlarmOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RackAirFlowAlarmQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DutyCycleOverOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DutyCycleOverQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WaveGuidPressHumidityReq" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModulatorSwitchReq" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AfterChargingFair" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[510VFailureOnce]" Member="_510VFailureOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[510VFailureQuintic]" Member="_510VFailureQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BackupOnce" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BackupQuintic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ControlStatusTable" Member="ControlStatusTable">
+    <Type Name="ControlStatusTable">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StationID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LocalCtrl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RemoteCtrl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FilaSupply" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Preheat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RepeatCycle" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Antenna" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[Load]" Member="Load" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowOn" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BroadPulse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SpikePulse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Auto" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Manual" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HighVolon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HighVoloff" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fault" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[Backup]" Member="Backup" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PowerDataTable" Member="PowerDataTable">
+    <Type Name="PowerDataTable">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StationID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Vol5" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="Vol15" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolNeg15" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="Vol28" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="Vol45" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="Vol510" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolFilaInve" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolFilament" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolField" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolTitPump" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolEleBeam" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="VolArtifLine" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurCatho" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurReversePeak" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurFilament" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurFocusCoil" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurTitPump" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurLeveling" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="CurArtifLine" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StationParaTable" Member="StationParaTable">
+    <Type Name="StationParaTable">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StationID" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StationName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Slong" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="Slat" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
