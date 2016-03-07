@@ -71,28 +71,28 @@ namespace DataBaseOperate
             {
                 controlMsgList.Add(HexBinDecOct.ByteToBinString(message[i]));
             }
-            decimal? volField = HexBinDecOct.HexStringToDec(powerMsgList[9]) / 10.0m;
+            decimal? volField = HexBinDecOct.HexStringToDec(powerMsgList[12]) / 10.0m;
             RadarPowerData = new RadarPower
             {
-                VolArtifLine = HexBinDecOct.HexStringToDec(powerMsgList[0]) / 10.0m,
-                CurFilament = HexBinDecOct.HexStringToDec(powerMsgList[1]) / 10.0m,
-                CurFocusCoil = HexBinDecOct.HexStringToDec(powerMsgList[2]) / 10.0m,
-                Vol5 = HexBinDecOct.HexStringToDec(powerMsgList[3]) / 10.0m,
-                Vol15 = HexBinDecOct.HexStringToDec(powerMsgList[4]) / 10.0m,
-                Vol28 = HexBinDecOct.HexStringToDec(powerMsgList[5]) / 10.0m,
-                Vol45 = HexBinDecOct.HexStringToDec(powerMsgList[6]) / 10.0m,
-                Vol510 = HexBinDecOct.HexStringToDec(powerMsgList[7]) / 10.0m,
-                VolFilaInve = HexBinDecOct.HexStringToDec(powerMsgList[8]) / 10.0m,
+                CurFilament = HexBinDecOct.HexStringToDec(powerMsgList[0]) / 10.0m,
+                CurFocusCoil = HexBinDecOct.HexStringToDec(powerMsgList[1]) / 10.0m,
+                CurTitPump = HexBinDecOct.HexStringToDec(powerMsgList[2]) / 10.0m,
+                VolArtifLine = HexBinDecOct.HexStringToDec(powerMsgList[3]) / 10.0m,
+                Vol5 = HexBinDecOct.HexStringToDec(powerMsgList[4]) / 10.0m,
+                Vol15 = HexBinDecOct.HexStringToDec(powerMsgList[5]) / 10.0m,
+                VolNeg15 = HexBinDecOct.HexStringToDec(powerMsgList[6]) / 10.0m,
+                Vol28 = HexBinDecOct.HexStringToDec(powerMsgList[7]) / 10.0m,
+                Vol45 = HexBinDecOct.HexStringToDec(powerMsgList[8]) / 10.0m,
+                Vol510 = HexBinDecOct.HexStringToDec(powerMsgList[9]) / 10.0m,
+                VolFilaInve = HexBinDecOct.HexStringToDec(powerMsgList[10]) / 10.0m,
+                VolFilament = HexBinDecOct.HexStringToDec(powerMsgList[11]) / 10.0m,
                 VolField = volField,
-                CurLeveling = HexBinDecOct.HexStringToDec(powerMsgList[10]) / 10.0m,
-                CurReversePeak = HexBinDecOct.HexStringToDec(powerMsgList[11]) / 10.0m,
-                CurArtifLine = HexBinDecOct.HexStringToDec(powerMsgList[12]) / 10.0m,
-                CurCatho = HexBinDecOct.HexStringToDec(powerMsgList[13]) / 10.0m,
-                VolEleBeam = volField == 0 ? 0 : HexBinDecOct.HexStringToDec(powerMsgList[14]) / 10.0m,
-                VolFilament = HexBinDecOct.HexStringToDec(powerMsgList[15]) / 10.0m,
-                CurTitPump = HexBinDecOct.HexStringToDec(powerMsgList[17]) / 10.0m,
-                VolNeg15 = HexBinDecOct.HexStringToDec(powerMsgList[20]) / 10.0m,
-                VolTitPump = HexBinDecOct.HexStringToDec(powerMsgList[21]) / 10.0m,
+                VolTitPump = HexBinDecOct.HexStringToDec(powerMsgList[13]) / 10.0m,
+                CurCatho = volField == 0 ? 0 : HexBinDecOct.HexStringToDec(powerMsgList[14]) / 10.0m,
+                VolEleBeam = HexBinDecOct.HexStringToDec(powerMsgList[15]) / 10.0m,
+                CurReversePeak = HexBinDecOct.HexStringToDec(powerMsgList[16]) / 10.0m,
+                CurArtifLine = HexBinDecOct.HexStringToDec(powerMsgList[17]) / 10.0m,
+                CurLeveling = HexBinDecOct.HexStringToDec(powerMsgList[18]) / 10.0m,
             };
 
             AlarmStatusData = ReturnAlarmData(string.Join("", statusMsgList.ToArray()));
